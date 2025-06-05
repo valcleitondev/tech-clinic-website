@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .logo {
+    width: 200px;
+    height: auto;
+  }
+  
+  main h1, main h2, main h3 {
+    color: #0c6b73;
+  }
+
+  main h1,
+main h2 {
+    padding-left: 15px;
+    border-left: 5px solid #0c6b73;
+    margin-bottom: 25px;
+}
+  figcaption {
+    font-style: italic;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  
+  footer .nav-link {
+    color: white;
+  }
+  
+  footer .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  footer .text-info {
+    text-decoration: none;
+  }
+  
+  footer .text-info:hover {
+    text-decoration: underline;
+  }
+  

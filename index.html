@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechClinic</title>
+  <link rel="icon" href="img/icone.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="bg-primary text-white p-3 d-flex justify-content-between align-items-center">
+    <img src="img/logo.png" alt="Logo da Clínica Médica" class="logo" />
+    <nav>
+      <ul class="nav">
+        <li class="nav-item"><a href="#inicio" class="nav-link text-white">Início</a></li>
+        <li class="nav-item"><a href="#servicos" class="nav-link text-white">Serviços</a></li>
+        <li class="nav-item"><a href="#galeria" class="nav-link text-white">Galeria</a></li>
+        <li class="nav-item"><a href="#contato" class="nav-link text-white">Contato</a></li>
+        <li class="nav-item"><a href="#localizacao" class="nav-link text-white">Localização</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container my-5" id="inicio">
+    <section class="mb-5">
+      <h1>Bem-vindo à TechClinic</h1>
+      <p class="lead">Cuidando da sua saúde com profissionais especializados.</p>
+    </section>
+
+    <section id="servicos" class="mb-5">
+      <h2>Especialidades</h2>
+      <div class="row">
+        <article class="col-md-4">
+          <h3>Cardiologia</h3>
+          <p>Avaliação e tratamento de doenças do coração.</p>
+        </article>
+        <article class="col-md-4">
+          <h3>Pediatria</h3>
+          <p>Cuidado completo para crianças e adolescentes.</p>
+        </article>
+        <article class="col-md-4">
+          <h3>Ginecologia</h3>
+          <p>Saúde da mulher com atendimento humanizado.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="galeria" class="mb-5">
+      <h2>Galeria</h2>
+      <div class="row">
+        <figure class="col-md-6">
+          <img src="img/clinica.jpg" alt="Foto da recepção da clínica" class="img-fluid rounded" />
+          <figcaption>Recepção moderna e acolhedora</figcaption>
+        </figure>
+        <figure class="col-md-6">
+          <img src="img/equipe.jpg" alt="Equipe de médicos da clínica" class="img-fluid rounded" />
+          <figcaption>Nossa equipe de especialistas</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="contato" class="mb-5">
+      <h2>Contato</h2>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="nome" class="form-label">Nome:</label>
+          <input type="text" id="nome" name="nome" class="form-control" required />
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" id="email" name="email" class="form-control" required />
+        </div>
+        <div class="col-md-6">
+          <label for="assunto" class="form-label">Assunto:</label>
+          <select id="assunto" name="assunto" class="form-select" required>
+            <option value="">Selecione</option>
+            <option>Agendamento de consulta</option>
+            <option>Dúvidas</option>
+            <option>Outros</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <label for="mensagem" class="form-label">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" class="form-control" rows="4" required></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="localizacao" class="mb-5">
+      <h2>Onde estamos</h2>
+      <div class="mb-2">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10538.262264704079!2d-38.5490042!3d-3.7318301!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c749a974ac5899%3A0xf5c370a6da1edc4d!2sCl%C3%ADnica%20de%20Imagem%20do%20Cear%C3%A1!5e1!3m2!1spt-BR!2sbr!4v1749081326699!5m2!1spt-BR!2sbr" width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      <p>R 24 de Maio, 1172 - Centro, Fortaleza - CE</p>
+      <a href="https://maps.app.goo.gl/R9ESFBrdRvpt8mrbA" target="_blank" class="btn btn-outline-primary">Ver no Google Maps</a>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center p-4">
+    <p>&copy; 2025 TechClinic</p>
+    <nav>
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a href="#inicio" class="nav-link text-white">Início</a></li>
+        <li class="nav-item"><a href="#servicos" class="nav-link text-white">Serviços</a></li>
+        <li class="nav-item"><a href="#galeria" class="nav-link text-white">Galeria</a></li>
+        <li class="nav-item"><a href="#contato" class="nav-link text-white">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="mt-2">
+      <a href="#" class="text-info me-2">Facebook</a>
+      <a href="#" class="text-info">Instagram</a>
+    </div>
+  </footer>
+</body>
+</html>
